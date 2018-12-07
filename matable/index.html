@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <title>Ma Table</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar navbar-scroll">
+            <div class="navContainer">
+                <div class="imgCont">
+                    <img src="Logo_ma_table.png" alt="" class="navbarImg nav_img_scroll">
+                </div>
+                <div class="lang">
+                    <img src="france.png" alt="">
+                    <img src="anglais.jpg" alt="">
+                    <img src="cn.png" alt="">
+                </div>
+            </div>
+        </div>
+        <h1>Aidez vos serveurs à fidéliser les clients</h1>
+    </header>
+    <section>
+        <div class="row">
+            <div class="wd-5">
+                <h3>UN RESTAURATEUR SEREIN ET RECONNU</h3>
+                <div class="listItem">
+                    <p>Gestion du contenu du site</p>
+                    <p> - Personnalisez votre site application selon l’identité proprette votre établissement</p>
+                </div>
+                <div class="listItem">
+                    <p>Gestion numérique de la carte</p>
+                    <p>- Modifiez votre carte et mettez au goût du jour les plats préférés de vos clients</p>
+                </div>
+                <div class="listItem">
+                    <p>Suivi des recettes</p>
+                    <p>- Ne perdez plus de vue votre chiffre d’affaire</p>
+                </div>
+                <div class="listItem">
+                    <p>Management de confiance</p>
+                    <p>- Permettez à votre équipe de gérer de manière autonome le services</p>
+                </div>
+            </div>
+            <div class="wd-5">
+                <img src="Macbook.png" />
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="wd-5">
+                <img src="Iphone.png" />
+            </div>
+            <div class="wd-5">
+                <h3>UN CLIENT SATISFAIT ET FIDEL</h3>
+                <div class="listItem">
+                    <p>Reservation en ligne</p>
+                    <p>- Permettez à vos habitués de prendre rendez-vous avec leur table préférée</p>
+                </div>
+                <div class="listItem">
+                    <p>Gestion des commandes</p>
+                    <p>- Envoyez la commande de la table et économisé des allers-retours</p>
+                </div>
+                <div class="listItem">
+                    <p>Suivi de la table</p>
+                    <p>- Restez connecté à l’avancement du repas de vos clients</p>
+                </div>
+                <div class="listItem">
+                    <p>Addition personnalisée</p>
+                    <p>- Collectez le paiement et l’avis du client</p>
+                </div>
+                <div class="listItem">
+                    <p>Retour expérience client</p>
+                    <p>- Permettez à vos clients de recommander la prestation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+            <h3 class="subHeading">Blog</h3>
+            <div class="box">
+                <div class="divImg">
+                    <img class="carrousel" src="Sushi700x420.jpg">
+                </div>
+                <div class="divImg">
+                    <img class="carrousel" src="Vapiano.jpg">
+                </div>
+                <div class="divImg">
+                    <img class="carrousel" src="Interior.jpg">
+                </div>
+                <div class="divImg">
+                    <img class="carrousel" src="Plat2.png">
+                </div>
+            </div>
+    </section>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            var navbar = $('.navbar');
+            var navLogo = $('.navbarImg');
+
+            $(window).scroll(function(){
+                if($(window).scrollTop() <= 40){
+                    navbar.removeClass('navbar-scroll');
+                    navLogo.removeClass('nav_img_scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                    navLogo.addClass('nav_img_scroll');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

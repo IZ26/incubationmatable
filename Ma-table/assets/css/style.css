@@ -1,0 +1,272 @@
+body {
+    background-color: #ededed;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    /*background-color: purple;*/
+    width: 80%;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+}
+.navbar-Container {
+    background-color: #FFFFFF;
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#nav-icon {
+    position: absolute;
+    top: 0;
+    margin:0 auto;
+    right:0;
+    left:0;
+    z-index: 10000000;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links a {
+    color: #111111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background: brown;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #111111;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+footer p {
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+/* Login */
+#sectionConnect {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formConnexion {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px #555;
+    background-color: white;
+    padding: 50px;
+    width: 390px;
+    align-content: center;
+}
+.boutonConnexion{
+    background-color: #FFCC00;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.boutonConnexion:hover {
+    background-color: #DDB100;
+}
+input{
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-indent: 10px;
+}
+input:focus{
+    background-color: white;
+}
+
+.lostPwd{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    color:grey;
+}
+
+
+/* List */
+.list{
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+#rowList1 {
+    color: grey;
+    margin-top: 6px;
+    border-bottom: 1px solid rgba(193, 193, 193, 1);
+}
+.rowList {
+    display: flex;
+    border-bottom: 1px solid rgba(226, 226, 226, 1);
+    align-items: center;
+}
+.text-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Serveur Dashboard */
+.title {
+    display: flex;
+    justify-content: center;
+}
+.FirstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Serveurs {
+    background-color: #fff;
+    width: 30%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px #555;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+.FirstColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+    align-items: center;
+}
+.UserPic{
+    width: 70px;
+    height: 70px;
+}
+.RatingStars{
+    width: 15px;
+    height: 15px;
+}
+.ColoredText{
+    color: #C7741C;
+}
+.spacedText{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+
+/* Command */
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: calc(1280px * 0.25);
+    margin: 10px 0 10px 0;
+    height: 272px;
+    position: relative;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+.card h3{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.card button{
+    border: none;
+    background-color: #210001;
+    color: #FFCC00;
+    margin: 20px 0px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    box-shadow: 0px 3px 10px #c1c1c1;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #FFCC00;
+    color: #210001;
+    transition: all 0.3s ease-in-out;
+}
+.brownLight{
+    color: #FFCC00;
+    font-style: italic;
+    margin: 0;
+}
+.brownDark{
+    color: #210001;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.btnCommand {
+    position: absolute;
+    bottom: 0;
+}
+.btnCommand button {
+    bottom: 0;
+}
+
+
+/* Plats */
+.platImg{
+    width: 320px;
+    object-fit: cover;
+}
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.repasContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 1px 1px 12px #555;
+    margin: 7px 0 7px 0;
+}
+.classSpan{
+    padding: 20px;
+}

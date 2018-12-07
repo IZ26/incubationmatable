@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    top: 0;
+    transition-duration: 0.8s;
+}
+.navbarImg {
+    width: 140%;
+    transition-duration: 0.8s;
+}
+.nav_img_scroll {
+    width: 100%;
+    transition-duration: 0.8s;
+}
+.navbar-scroll {
+    background: transparent;
+    transition-duration: 0.6s;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang {
+    display: flex;
+    margin-right: 5%;
+}
+.lang img {
+    width: 20px;
+    height: 13px;
+    margin:0 5px;
+}
+
+.header{
+    height: 100vh;
+    background: url("Groupe 12.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.row{
+    width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.row h3{
+    color: #C8741C;
+    font-size: 30px;
+}
+.row .wd-5:last-of-type{
+    text-align: center;
+}
+
+.row-container{
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+.row-container img{
+    width: 250px;
+}
+
+.row-container h3{
+    color: #C8741C;
+    font-size: 30px;
+}
+.row-container .wd-5:first-of-type{
+    text-align: center;
+}
+
+.listItem{
+    margin: 15px 0px;
+}
+.listItem p:first-of-type{
+    font-weight: 600;
+    font-size: 23px;
+    margin: 10px 0px;
+    color: #212121;
+}
+.listItem p:last-of-type{
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    font-size: 17px;
+}
+
+.wd-5{
+    width: 50%;
+}
+
+.subHeading{
+    text-align: center;
+    margin: 25px 0px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.sousTitre{
+     width: 100vw;
+     text-align: center;
+     padding: 10px;
+     border: 1px solid;
+ }
+.container{
+    display: flex;
+}
+.block{
+    border: 1px solid;
+    width: 50vw;
+    padding: 80px 30px;
+}
+.block p{
+    font-size: 20px;
+}
+.blog{
+    width: 100vw;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 30px;
+}
+.carrousel{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.divImg{
+    border-radius: 150px;
+    padding-right: 30px;
+}
